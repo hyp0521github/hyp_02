@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 注册页面为了隐私不需要对当前页面做SEO优化 -->
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="favicon.ico" />
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <div class="w">
+      <div class="register_hd">
+        <div class="logo">
+          <img src="images\cccccc.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="registerarea w">
+      <div class="hd">
+        <h5>注册新用户</h5>
+        <p>
+          我有账号, 去
+          <a style="color: red" href="#" id="link">登录</a>
+        </p>
+      </div>
+      <div class="login">
+        <div class="login-title">
+          <span><a href="#">登录会员</a></span>
+        </div>
+        <div class="login-stop"><a href="#" id="guanbi">关闭</a></div>
+        <div class="login-input-content">
+          <div class="login-input">
+            <label for="">&nbsp;&nbsp;&nbsp;用户名：</label>
+            <input type="text" placeholder="请输入用户名" />
+          </div>
+          <div class="login-input">
+            <label for="">登录密码：</label>
+            <input type="password" placeholder="请输入你的密码" />
+          </div>
+        </div>
+        <div class="login-button">
+          <a href="#">登录</a>
+        </div>
+      </div>
+      <div class="login_bg"></div>
+      <div class="reg-form">
+        <div class="tel">
+          <label for="">手机号 :</label>
+          <input type="tel" id="tel" />
+          <span class="error red">
+            <i class="error_icon"></i>
+            密码不少于六位数，请重新输入
+          </span>
+        </div>
+        <div class="yzm">
+          <label for="">短信验证码 ：</label>
+          <input type="text" id="yzm" />
+          <span class="success">
+            <i class="success_icon"></i>
+            验证码正确
+          </span>
+        </div>
+        <div class="dlmm">
+          <label for="">登录密码 :</label>
+          <input type="password" id="dlmm" />
+          <span class="error red">
+            <i class="error_icon"></i>
+            密码不少于六位数，请重新输入
+          </span>
+          <div class="aqx">
+            <label for="">安全强度</label>
+            <em class="qiang">强</em>
+            <em class="zhong">中</em>
+            <em class="ruo">弱</em>
+          </div>
+        </div>
+        <div class="qrmm">
+          <label for="">确认密码 :</label>
+          <input type="password" id="qrmm" />
+          <span class="error red">
+            <i class="error_icon"></i>
+            密码不少于六位数，请重新输入
+          </span>
+        </div>
+        <div class="default">
+          <input type="checkbox" checked="checkbox" />
+          同意协议并注册，&nbsp; 《
+          <a style="color: blue" href="javascript:;"> 我同意用户协议 </a>
+          》
+        </div>
+        <div class="ok">
+          <input type="submit" value="完成注册" class="bt" />
+        </div>
+      </div>
+    </div>
+    <div class="footer w">
+      <div class="mod_copyright">
+        <div class="link">
+          <ul>
+            <li>关于我们</li>
+            <li>关于我们</li>
+            <li>关于我们</li>
+            <li>关于我们</li>
+            <li>关于我们</li>
+            <li>关于我们</li>
+            <li>关于我们</li>
+            <li>关于我们</li>
+            <li>关于我们</li>
+            <li>关于我们</li>
+            <li>关于我们</li>
+            <li>关于我们</li>
+          </ul>
+        </div>
+        <div class="copyright">
+          地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096
+          电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备08001421号京公网安备110108007702
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var link = document.querySelector("#link");
+    var login = document.querySelector(".login");
+    var bg = document.querySelector(".login_bg");
+    var guanbi = document.querySelector("#guanbi");
+    var title = document.querySelector(".login-title");
+    link.addEventListener("click", function () {
+      login.style.display = "block";
+      bg.style.display = "block";
+    });
+    guanbi.addEventListener("click", function () {
+      login.style.display = "none";
+      bg.style.display = "none";
+    });
+    title.addEventListener("mousedown", function (e) {
+      var x = e.pageX - login.offsetLeft;
+      var y = e.pageY - login.offsetTop;
+      document.addEventListener("mousemove", move);
+      function move(e) {
+        login.style.left = e.pageX - x + "px"; //不能用x1，x后面不能跟数字
+        login.style.top = e.pageY - y + "px"; //offset只能获取值，不能赋值
+      }
+      document.addEventListener("mouseup", function () {
+        document.removeEventListener("mousemove", move);
+        //添加move，也能移除move
+      });
+    });
+  </script>
+</html>

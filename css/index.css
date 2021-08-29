@@ -1,0 +1,358 @@
+img {
+  transition: all 0.7s;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.main {
+  margin-top: 10px;
+  height: 455px;
+}
+/*html中子盒子会继承父盒子的宽度,也会继承祖父盒子的宽度，但是不包含他的padding和border值也不会继承高度,如果父盒子没有宽度就按整个电脑屏幕来算，高度就是各个子盒子加起来的高度*/
+.main .focus {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  width: 722px;
+  height: 455px;
+  margin-left: 242px;
+  z-index: 1;
+}
+.main .focus .focus_left,
+.main .focus .focus_right {
+  display: none;
+  position: absolute;
+  top: 46%;
+  width: 20px;
+  height: 40px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0px 25px 25px 0px;
+  text-align: center;
+  line-height: 40px;
+  z-index: 2;
+}
+.main .focus .focus_right {
+  left: 702px;
+  border-radius: 25px 0 0 25px;
+}
+.main .focus ul {
+  position: relative;
+  float: left;
+  width: 6000px;
+}
+.main .focus ul li {
+  float: left;
+}
+.main .focus ul li img {
+  width: 722px;
+  height: 455px;
+}
+.main .focus ol {
+  position: absolute;
+  top: 435px;
+  left: 71px;
+}
+.focus ol li {
+  float: left;
+  margin: 0px 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.main .newflash {
+  float: left;
+  margin-left: 15px;
+  width: 220px;
+  height: 360px;
+  border: 1px solid lightgray;
+  background-color: bisque;
+}
+.main .newflash .news {
+  width: 220px;
+  height: 172px;
+}
+.newflash .news .news-hd {
+  height: 34px;
+  border-bottom: 1px solid lightgray;
+}
+.newflash .news .news-hd h5 {
+  float: left;
+  margin-left: 17px;
+  line-height: 34px;
+}
+.newflash .news .news-hd .more {
+  float: right;
+  margin-right: 17px;
+  line-height: 34px;
+}
+.newflash .news .news-bd ul li {
+  margin: 9px 0 0 14px;
+  font-weight: 700;
+}
+.newflash .lifeservice {
+  border-top: 1px solid lightgray;
+  width: 220px;
+}
+.newflash .lifeservice ul li {
+  float: left;
+  width: 55px;
+  height: 62px;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  background-color: bisque;
+}
+.lifeservice ul li a {
+  color: black;
+}
+.newflash .lifeservice ul li:nth-child(4n) {
+  border-right: 0;
+}
+.newflash .lifeservice ul li:nth-child(n + 9) {
+  border-bottom: 0;
+}
+.newflash .lifeservice ul li i {
+  display: inline-block;
+  margin: 12px 0 0 17px;
+  width: 25px;
+  height: 25px;
+  background: url(../../js大综合/img/jlt.png) no-repeat 0px 0px;
+}
+.newflash .lifeservice ul li a {
+  margin: 0 0 0 15px;
+}
+.newflash .bargain img {
+  margin-top: 20px;
+  width: 220px;
+}
+.recom {
+  float: rigth;
+  margin-top: 15px;
+  height: 163px;
+}
+.recom .recom_hd {
+  float: left;
+  width: 200px;
+  height: 163px;
+  background-color: #5c5251;
+}
+.recom .recom_hd img {
+  margin: 42px 0 0 64px;
+}
+.recom .recom_bd {
+  float: left;
+}
+.recom .recom_bd ul li {
+  position: relative;
+  float: left;
+}
+.recom .recom_bd ul li img {
+  width: 248px;
+  height: 163px;
+}
+/*应该以li为父亲,然后在每个小li后面添加border*/
+/* .recom .recom_bd ul li:nth-child(n + 2)::after {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 140px;
+  border-right: 1px solid red;
+} */
+.floor {
+  margin-top: 20px;
+}
+.floor .floor_nav {
+  display: none;
+  position: fixed;
+  top: 172px;
+  left: 1410px;
+  width: 110px;
+  border: 1px solid white;
+}
+.floor .floor_nav ul li {
+  height: 45px;
+  border-bottom: 1px solid white;
+  text-align: center;
+  line-height: 45px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ff700d;
+}
+.floor .floor_nav ul li:hover {
+  background-color: red;
+}
+.floor .floor_nav ul li:nth-child(5) {
+  border-bottom: 0;
+}
+.floor .jiadian {
+  position: relative;
+  /*不给高度让盒子自己撑开*/
+  /*height: 383px;*/
+  overflow: hidden;
+}
+.floor .box_hd {
+  height: 30px;
+  border-bottom: 2px solid red;
+}
+.floor .box_hd h3 {
+  float: left;
+  font-size: 18px;
+}
+.floor .box_hd .tab_list {
+  margin-top: 8px;
+  float: right;
+}
+.box_hd .tab_list ul li {
+  position: relative;
+  float: left;
+  padding: 0 15px;
+}
+.box_hd .tab_list ul li::after {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  content: "";
+  width: 1px;
+  height: 11px;
+  border-right: 1px solid black;
+}
+.box_hd .tab_list ul li a:hover {
+  color: red;
+  font-weight: 700;
+}
+.floor .box_bd {
+  width: 10000px;
+  height: 362px;
+}
+.floor .box_bd .tab_content {
+  width: 1200px;
+  height: 362px;
+}
+.floor .box_bd .tab_content_two,
+.tab_content_three,
+.tab_content_four,
+.tab_content_five {
+  width: 1200px;
+  height: 362px;
+  background-color: bisque;
+  text-align: center;
+  line-height: 362px;
+  font-size: 50px;
+  color: rebeccapurple;
+}
+.tab_content_two {
+  background-color: yellow;
+}
+.tab_content_three {
+  background-color: red;
+}
+.tab_content_four {
+  background-color: green;
+}
+.tab_content_five {
+  background-color: pink;
+}
+
+.floor .box_bd .tab_content div {
+  float: left;
+}
+.floor .box_bd > div {
+  float: left;
+}
+.floor .box_bd .tab_content .box1 {
+  width: 209px;
+  height: 360px;
+  background-color: #f9f9f9;
+}
+.floor .box_bd .tab_content .box1 .tab_list ul li {
+  float: left;
+  margin-left: 20px;
+  width: 82px;
+  height: 32px;
+  border-bottom: 1px solid red;
+  line-height: 30px;
+  text-align: center;
+}
+.floor .box_bd .tab_content .box1 .box_bottom img {
+  margin: 10px 0 0 15px;
+}
+.floor .box_bd .box2 {
+  position: relative;
+  width: 329px;
+  height: 360px;
+  overflow: hidden;
+}
+.floor .box_bd .tab_content .box2 .b_l,
+.b_r {
+  display: none;
+  position: absolute;
+  top: 46%;
+  width: 20px;
+  height: 40px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0px 25px 25px 0px;
+  text-align: center;
+  line-height: 40px;
+  z-index: 2;
+}
+.b_r {
+  left: 309px;
+  border-radius: 25px 0px 0px 25px;
+}
+.floor .box_bd .tab_content .box2 .ful {
+  position: relative;
+  width: 2000px;
+  height: 360px;
+}
+.floor .box_bd .tab_content .box2 .ful li {
+  float: left;
+}
+.floor .box_bd .tab_content .box2 .ful li img {
+  width: 329px;
+  height: 360px;
+}
+.floor .box_bd .tab_content .box2 .fol {
+  position: absolute;
+  top: 339px;
+  left: 146px;
+}
+.floor .box_bd .tab_content .box2 .fol li {
+  float: left;
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+.floor .box_bd .tab_content .box3 {
+  width: 220px;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+}
+.floor .box_bd .tab_content .box3 img:nth-child(1) {
+  border-bottom: 1px solid red;
+}
+.floor .box_bd .tab_content .box4 {
+  width: 221px;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+}
+.floor .box_bd .tab_content .box5 {
+  width: 221px;
+  height: 360px;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+}
+.floor .box_bd .tab_content .box5 img:nth-child(1) {
+  border-bottom: 1px solid red;
+}
+.floor .jiaju {
+  position: relative;
+  margin-top: 20px;
+}

@@ -1,0 +1,182 @@
+.register_hd {
+  margin-top: 20px;
+  height: 68px;
+  border-bottom: 2px solid red;
+}
+.registerarea {
+  height: 450px;
+  margin-top: 20px;
+}
+.registerarea .hd {
+  height: 30px;
+  background-color: silver;
+  line-height: 30px;
+}
+.registerarea .hd h5 {
+  float: left;
+  font-size: 14px;
+  color: black;
+  padding-left: 10px;
+}
+.registerarea .hd p {
+  float: right;
+  color: black;
+  padding-right: 10px;
+}
+.registerarea .reg-form {
+  margin: 40px auto;
+  width: 480px;
+  height: 420px;
+}
+.registerarea .reg-form input {
+  width: 180px;
+  height: 30px;
+  outline: none;
+}
+.registerarea .reg-form div {
+  margin-bottom: 19px;
+  margin-left: 21px;
+}
+.registerarea .reg-form div:nth-child(1) {
+  margin-left: 32px;
+}
+.registerarea .reg-form div:nth-child(2) {
+  margin-left: 0;
+}
+.error,
+.success {
+  margin-left: 7px;
+}
+.error_icon,
+.success_icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/aaa.png) no-repeat;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.success {
+  color: green;
+}
+.success_icon {
+  background: url(../images/fsfd.png);
+}
+.registerarea .reg-form .dlmm .aqx {
+  margin: 11px 0 0 82px;
+  color: silver;
+}
+.registerarea .reg-form .dlmm .aqx em {
+  display: inline-block;
+  width: 32px;
+  height: 14px;
+  color: white;
+  text-align: center;
+  line-height: 14px;
+}
+.qiang {
+  background-color: rgb(214, 240, 174);
+}
+.zhong {
+  background-color: rgb(102, 133, 55);
+}
+.ruo {
+  background-color: red;
+}
+.registerarea .reg-form .qrmm {
+  margin-top: 18px;
+}
+.registerarea .reg-form .default {
+  margin: 46px 0 0 56px;
+}
+.registerarea .reg-form .default input {
+  margin: 0 4px 0 0;
+  /* （针对图片或行内和行内块元素的表单）和文字的布局 */
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+}
+.registerarea .reg-form .ok {
+  margin: 48px 0 0 79px;
+}
+.registerarea .reg-form .ok .bt {
+  color: white;
+  background-color: red;
+  text-align: center;
+  line-height: 30px;
+  border: 0;
+}
+.footer {
+  position: relative;
+  margin-top: 30px;
+  border-top: 1px solid silver;
+}
+.footer .mod_copyright .link ul li {
+  float: left;
+  padding: 15px;
+}
+.login {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 250px;
+  text-align: center;
+  cursor: move;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px #ddd;
+  z-index: 9999; /*让弹出的对话框里面的属性永远是最先实现的*/
+  transform: translate(-50%, -50%); /*固定定位居中对齐*/
+}
+.login-title {
+  padding-top: 20px; /*在一个大盒子里面,小盒子用padding值就能和大盒子隔开*/
+}
+.login-stop {
+  position: absolute;
+  top: -30px;
+  left: 475px; /*向左为正值,向下为正值*/
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #ffffff; /*让弹出框有个区别于原先白色背景的颜色*/
+  box-shadow: 0 0 20px #ddd;
+  border-radius: 25px;
+}
+.login-input {
+  margin: 20px 0;
+}
+.login-input label {
+  font-family: "微软雅黑";
+  color: #000000;
+}
+.login-input input {
+  width: 270px;
+  height: 30px;
+  border: 1px solid aqua;
+  outline: none;
+}
+input:hover,
+.login-button a:hover {
+  border: 1px solid pink;
+}
+.login-button a {
+  display: inline-block;
+  margin-left: 70px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid aqua;
+  line-height: 30px;
+  background-color: white;
+}
+/*遮罩层*/
+.login_bg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,79 @@
+.nav {
+  border-bottom: 2px solid red;
+}
+.nav .w .dropdown .dtl ul li {
+  float: left;
+  padding: 5px 14px;
+}
+.nav .w .dropdown .dtl {
+  float: left;
+  width: 300px;
+  height: 46px;
+  color: black;
+  text-align: center;
+  line-height: 46px;
+  font-weight: 700;
+}
+.sj_bd {
+  margin: 20px 0 2px 0;
+  height: 916px;
+}
+.sj_bd ul li {
+  float: left;
+  margin-right: 10px;
+  width: 290px;
+  height: 458px;
+}
+.sj_bd ul li img {
+  margin: 20px 0 0 84px;
+}
+.sj_bd ul li p {
+  padding: 9px 18px;
+  line-height: 24px;
+}
+.sj_bd ul li .icon {
+  margin: -10px 0 0 15px;
+}
+.sj_bd ul li .icon span {
+  font-size: 20px;
+  font-weight: 700;
+  color: red;
+}
+.sj_bd ul li .icon s {
+  margin-left: 8px;
+  color: silver;
+}
+.sj_bd ul li .jdt {
+  margin: 3px 0 0 18px;
+}
+.sj_bd ul li .jdt span {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3px;
+  width: 133px;
+  height: 13px;
+  border-radius: 7px;
+  border: 1px solid black;
+}
+.sj_bd ul li .jdt span i {
+  display: inline-block;
+  vertical-align: top;
+  margin: -1px 0 0 -1px;
+  width: 108px;
+  height: 13px;
+  background-color: red;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.sj_bd ul li .denglu .but {
+  margin-top: 15px;
+  width: 290px;
+  height: 64px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 64px;
+  border: 0;
+  cursor: pointer;
+}
