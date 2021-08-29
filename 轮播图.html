@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.w {
+				margin: 100px auto;
+				width: 1200px;
+			}
+			.focus {
+				position: relative;
+				width: 520px;
+				height: 280px;
+				cursor: pointer;
+				overflow: hidden;
+			}
+			.arrow_l,
+			.arrow_r {
+				display: none;
+				position: absolute;
+				top: 50%;
+				margin-top: -20px;
+				width: 20px;
+				height: 40px;
+				background-color: rgba(255, 255, 255, .8);
+				text-align: center;
+				line-height: 40px;
+				border-radius: 0 25px 25px 0;
+				z-index: 2;
+			}
+			.arrow_r {
+				right: 0;
+				border-radius: 25px 0 0 25px;
+			}
+			a {
+				text-decoration: none;
+			}
+			li {
+				list-style: none;
+			}
+			.focus ul {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 600%;
+			}
+			.focus ul li img {
+				float: left;
+				border-radius: 15px;
+			}
+			.circle {
+				position: absolute;
+				bottom: 10px;
+				left: 220px;
+				width: 73px;
+				height: 15px;
+				background-color: rgba(255, 255, 255, .3);
+				border-radius: 8px;
+				line-height: 15px;
+				cursor: auto;
+			}
+			.circle li {
+				float: left;
+				margin: 3px 3px 0 3px;
+				width: 8px;
+				height: 8px;
+				background-color: #F1F1F1;
+				border-radius: 4px;
+			}
+		</style>
+		<script src="js/domo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/indexs.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="w">
+			<div class="focus">
+				<a href="#" class="arrow_l">←</a>
+				<a href="#" class="arrow_r">→</a>
+				<ul>
+					<li>
+						<a href="#"><img src="img/qqqq.jpg"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/dDVXa.jpg"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/XXX.jpg"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/HVXa.jpg"/></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/pppp.jpg"/></a>
+					</li>
+				</ul>
+				<ol class="circle">
+					
+				</ol>
+			</div>
+		</div>
+	</body>
+</html>
